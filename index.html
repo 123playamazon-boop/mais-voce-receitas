@@ -132,6 +132,19 @@ h1 .thin{color:var(--ink);font-weight:700;font-size:.52em;display:block;letter-s
 .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:22px}
 @media(min-width:640px){.gallery{grid-template-columns:repeat(3,1fr)}}
 .gallery img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:14px;border:1px solid var(--line)}
+.magic{display:inline-block;background:var(--verde-c);color:var(--verde-d);border:1px solid #cfe7d7;font-weight:900;font-size:12px;letter-spacing:.04em;border-radius:999px;padding:7px 15px;margin:14px auto 0}
+.magic-wrap{text-align:center}
+.objbox{max-width:620px;margin:0 auto;background:#fff;border-left:4px solid var(--gold);border-radius:12px;padding:16px 18px;font-size:15px;color:#3f4b43}
+.objbox b{color:var(--verde-d)}
+.stack{max-width:560px;margin:0 auto 6px;background:#fff;border:2px solid var(--verde-c);border-radius:18px;padding:20px 20px 16px}
+.stack .row{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:9px 0;border-bottom:1px dashed var(--line);font-size:14.5px;font-weight:600}
+.stack .row:last-of-type{border-bottom:none}
+.stack .row .v{color:var(--muted);font-weight:800;white-space:nowrap}
+.stack .row.free .v{color:var(--verde);text-decoration:none}
+.stack .tot{display:flex;justify-content:space-between;align-items:baseline;margin-top:12px;padding-top:12px;border-top:2px solid var(--verde-c);font-weight:900;color:var(--muted)}
+.stack .tot s{font-size:15px}
+.stack .now{text-align:center;margin-top:12px;font-weight:900;color:var(--verde-d);font-size:17px}
+.stack .now b{font-size:30px}
 </style>
 </head>
 <body>
@@ -141,7 +154,8 @@ h1 .thin{color:var(--ink);font-weight:700;font-size:.52em;display:block;letter-s
 <header class="wrap">
   <div class="brand">Mais Você · as receitas da Dona Benta</div>
   <h1>Coma bolo, pão e sobremesa todo dia <span class="thin">sem açúcar, sem glúten e sem lactose — e ainda mais leve</span></h1>
-  <p class="sub">365 receitas da Dona Benta, simples e ilustradas — mesmo que você quase não saiba cozinhar.</p>
+  <p class="sub">A sua primeira receita você já faz hoje à noite — mesmo que você quase não saiba cozinhar.</p>
+  <div class="magic-wrap"><span class="magic">365 receitas · simples e ilustradas · acesso vitalício</span></div>
   <p class="lead">Bolos, pães, sobremesas, lanches e refeições em versões leves e deliciosas para transformar sua rotina.</p>
 
   <div class="hero-img">
@@ -153,7 +167,8 @@ h1 .thin{color:var(--ink);font-weight:700;font-size:.52em;display:block;letter-s
 </header>
 
 <section class="sec"><div class="wrap">
-  <h2>Benefícios do produto</h2>
+  <h2>Volte a comer o que você ama — sem pagar o preço depois</h2>
+  <p style="text-align:center;color:var(--muted);max-width:540px;margin:4px auto 0">Eu sei o que você está pensando: "receita sem açúcar, sem glúten e sem lactose deve ser sem graça." É justamente por isso que são <b style="color:var(--verde-d)">365</b>.</p>
   <div class="ben">
     <div class="b"><span class="e">✓</span>365 receitas doces e salgadas</div>
     <div class="b"><span class="e">✓</span>Sem açúcar, sem glúten e sem lactose</div>
@@ -234,8 +249,8 @@ h1 .thin{color:var(--ink);font-weight:700;font-size:.52em;display:block;letter-s
 
 <section class="sec" style="background:#fff"><div class="wrap">
   <div class="bonus-wrap">
-    <div class="k">Presente especial</div>
-    <h2>Compre agora e ganhe 3 bônus</h2>
+    <div class="k">Só na Super Oferta</div>
+    <h2>Leve a Super e ganhe 3 bônus</h2>
     <div class="bonus-grid">
       <div class="bz"><span class="lbl">BÔNUS 1</span><b>Lista de Compras Essenciais</b><small>Os ingredientes certos pra montar sua despensa sem erro.</small><div class="pz"><span class="was">R$ 29,90</span><span class="free">GRÁTIS HOJE</span></div></div>
       <div class="bz"><span class="lbl">BÔNUS 2</span><b>Cardápio de 30 Dias</b><small>Ideias prontas pra variar suas refeições o mês inteiro.</small><div class="pz"><span class="was">R$ 39,90</span><span class="free">GRÁTIS HOJE</span></div></div>
@@ -248,6 +263,16 @@ h1 .thin{color:var(--ink);font-weight:700;font-size:.52em;display:block;letter-s
 <section class="sec" id="planos"><div class="wrap">
   <div class="k">Escolha seu plano</div>
   <h2>Acesso imediato · pagamento único</h2>
+
+  <div class="stack">
+    <div class="row">+500 Receitas Premium (Super) <span class="v">R$ 197,00</span></div>
+    <div class="row free">Bônus · Cardápio de 30 Dias <span class="v">R$ 39,90</span></div>
+    <div class="row free">Bônus · Guia de Substituições Inteligentes <span class="v">R$ 24,90</span></div>
+    <div class="row free">Bônus · Lista de Compras Essenciais <span class="v">R$ 29,90</span></div>
+    <div class="tot">Valor total <s>R$ 291,70</s></div>
+    <div class="now">Hoje, no lançamento: <b>R$ 18</b></div>
+  </div>
+
   <div class="plans">
     <div class="plan">
       <div class="pk">Oferta Básica</div>
